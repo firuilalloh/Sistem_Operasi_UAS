@@ -58,5 +58,3 @@ Berdasarkan hasil praktik, implementasi dengan Virtual Machine memiliki karakter
 | **Waktu Booting** | 2-4 Menit                      |
 
 ---
-
-_Disusun untuk memenuhi Tugas UAS Sistem Operasi._
