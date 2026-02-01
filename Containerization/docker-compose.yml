@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  web:
+    image: uas-php
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: db_tugas
