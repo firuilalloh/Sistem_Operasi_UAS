@@ -4,7 +4,7 @@ Di bagian ini mendokumentasikan proses instalasi dan konfigurasi Sistem Operasi 
 
 ---
 
-## 📂 Struktur Folder Dokumentasi
+## Struktur Folder Dokumentasi
 
 Berdasarkan folder `Virtualization`, berikut adalah aset pendukung yang tersedia:
 
@@ -19,7 +19,7 @@ Berdasarkan folder `Virtualization`, berikut adalah aset pendukung yang tersedia
 
 ---
 
-## 🛠️ Langkah-Langkah Implementasi
+## Langkah-Langkah Implementasi
 
 ### 1. Persiapan Resource
 
@@ -47,7 +47,7 @@ Fitur ini diaktifkan agar folder di Host OS bisa langsung terbaca di dalam Guest
 
 ---
 
-## 📝 Kesimpulan Teknis
+## Kesimpulan Teknis
 
 Berdasarkan hasil praktik, implementasi dengan Virtual Machine memiliki karakteristik:
 
@@ -56,5 +56,3 @@ Berdasarkan hasil praktik, implementasi dengan Virtual Machine memiliki karakter
 | **Isolasi**       | Sangat Kuat (Hardware Level)   |
 | **Resource**      | Berat (Alokasi Statis RAM/CPU) |
 | **Waktu Booting** | 2-4 Menit                      |
-
----

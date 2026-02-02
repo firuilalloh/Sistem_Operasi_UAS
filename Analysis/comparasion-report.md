@@ -17,15 +17,15 @@ Ini report yang menjelaskan perbedaan utama antara Virtual Machine dan Docker be
 ## Analisis Mendalam
 
 ### 1. Waktu Booting
-* **VM**: Membutuhkan waktu lama karena sistem harus melakukan simulasi hardware, memuat kernel OS tamu, dan menjalankan berbagai layanan sistem (services) dari nol.
-* **Docker**: Jauh lebih ringan karena Docker tidak melakukan booting OS. Ia hanya membungkus aplikasi dan dependensinya, lalu berjalan di atas kernel OS host.
+- **VM**: Membutuhkan waktu lama karena sistem harus melakukan simulasi hardware, memuat kernel OS tamu, dan menjalankan berbagai layanan sistem (services) dari nol.
+- **Docker**: Jauh lebih ringan karena Docker tidak melakukan booting OS. Ia hanya membungkus aplikasi dan dependensinya, lalu berjalan di atas kernel OS host.
 
 ### 2. Penggunaan Resource (RAM & CPU)
-* **VM**: Memiliki *overhead* yang besar karena setiap VM membawa Operating System sendiri. Jika Anda mengalokasikan 2GB RAM di VirtualBox, maka 2GB tersebut akan langsung terkunci.
-* **Docker**: Container hanya menggunakan resource yang memang sedang dibutuhkan. Jika aplikasi hanya butuh 100MB, maka hanya itu yang diambil dari host.
+- **VM**: Memiliki *overhead* yang besar karena setiap VM membawa Operating System sendiri. Jika Anda mengalokasikan 2GB RAM di VirtualBox, maka 2GB tersebut akan langsung terkunci.
+- **Docker**: Container hanya menggunakan resource yang memang sedang dibutuhkan. Jika aplikasi hanya butuh 100MB, maka hanya itu yang diambil dari host.
 
 ### 3. Isolasi Keamanan
 > **Penting untuk diperhatikan:**
 > Meskipun Docker sangat efisien, faktor keamanan tetap menjadi pertimbangan utama.
-* **VM**: Jika satu VM terkena malware, sangat sulit bagi malware tersebut untuk menembus ke VM lain atau ke Host karena dipisahkan oleh lapisan hardware virtual.
-* **Docker**: Karena semua container berbagi kernel yang sama, celah keamanan pada satu container (atau kernel itu sendiri) berpotensi berdampak pada seluruh container yang berjalan di host tersebut.
+- **VM**: Jika satu VM terkena malware, sangat sulit bagi malware tersebut untuk menembus ke VM lain atau ke Host karena dipisahkan oleh lapisan hardware virtual.
+- **Docker**: Karena semua container berbagi kernel yang sama, celah keamanan pada satu container (atau kernel itu sendiri) berpotensi berdampak pada seluruh container yang berjalan di host tersebut.
